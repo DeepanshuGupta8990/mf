@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmfe2=self.webpackChunkmfe2||[]).push([[429],{429:(e,n,t)=>{t.r(n),t.d(n,{default:()=>l});var a=t(318),c=t.n(a);const l=()=>c().createElement("div",{style:{margin:"10px",padding:"10px",textAlign:"center",backgroundColor:"cyan"}},c().createElement("h1",null,"Frinction"))}}]);

@@ -12,10 +12,13 @@ module.exports = {
   output: {
     publicPath: 'auto',
   },
+  resolve: {
+    extensions: [".tsx", ".ts", ".jsx", ".js"],
+  },  
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(jsx?|tsx?)$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
         options: {
@@ -31,6 +34,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         './App': './src/App',
+        './FrictionData': './src/FrictionData',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),

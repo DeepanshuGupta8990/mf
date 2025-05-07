@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmfe2=self.webpackChunkmfe2||[]).push([[696],{696:(e,n,t)=>{t.r(n),t.d(n,{default:()=>c});var a=t(318),l=t.n(a);const c=()=>l().createElement("div",{style:{margin:"10px",padding:"10px",textAlign:"center",backgroundColor:"cyan"}},l().createElement("h1",null,"Cart Application"))}}]);
