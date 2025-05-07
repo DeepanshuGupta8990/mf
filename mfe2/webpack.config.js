@@ -8,9 +8,10 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, 'dist'),
     port: 3002,
+    historyApiFallback: true,
   },
   output: {
-    publicPath: 'auto',
+    publicPath: "auto",
   },
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js"],
@@ -35,8 +36,9 @@ module.exports = {
       exposes: {
         './App': './src/App',
         './FrictionData': './src/FrictionData',
+        './store': './src/store',
       },
-      shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
+      shared: {'react': {singleton: true}, "react-dom": {singleton: true}, "react-router-dom": {singleton: true}},
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
