@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 
 // Page1 Component
 const Page1 = () => {
@@ -16,9 +16,9 @@ const Layout = () => {
   return (
     <div>
       <nav>
-        <Link to="/">Page 1</Link> | <Link to="page2">Page 2</Link>
+        <Link to='/'>Page 1</Link> | <Link to='page2'>Page 2</Link>
       </nav>
-      <div style={{ marginTop: "20px" }}>
+      <div style={{ marginTop: '20px' }}>
         <h2>Layout: Nested Routes</h2>
         <Outlet /> {/* Renders the nested route content */}
       </div>
@@ -29,12 +29,12 @@ const Layout = () => {
 const App = () => {
   return (
     <>
-    <Routes>
-    <Route path="/" element={<Layout />}>
-          <Route index element={<Page1 />} /> 
-          <Route path="page2" element={<Page2 />} />
-    </Route>
-    </Routes>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Page1 />} />
+          <Route path='page2' element={<Page2 />} />
+        </Route>
+      </Routes>
     </>
   );
 };
