@@ -19,7 +19,7 @@ const Layout = () => {
         <Link to='/'>Page 1</Link> | <Link to='page2'>Page 2</Link>
       </nav>
       <div style={{ marginTop: '20px' }}>
-        <h2>Layout: Nested Routes</h2>
+        <h2 className="underline">Layout: Nested Routes</h2>
         <Outlet /> {/* Renders the nested route content */}
       </div>
     </div>
